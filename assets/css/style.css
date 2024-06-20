@@ -21,7 +21,8 @@
     border-bottom-style: solid;
     border-bottom-width: initial;
     border-bottom-color: var(--separator-color);
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .header-item {
@@ -60,26 +61,21 @@
     color: var(--contrast-color);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.profile-photo {
+    height: 30em;;
 }
 
+.section {
+    background: var(--background-color);
+    color: var(--default-color);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 
-.container {
-    margin-top: 30px;
+.section-header {
+    color: var(--heading-color);
 }
-.section-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    border-bottom: 2px solid #007bff;
-    display: inline-block;
-}
-.work-experience, .skills {
-    margin-bottom: 30px;
-}
-.contact-info a {
-    color: #007bff;
-    text-decoration: none;
+
+.section-header-big {
+    font-size: 4rem;;
 }
