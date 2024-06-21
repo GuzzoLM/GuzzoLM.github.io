@@ -81,6 +81,12 @@ body {
     color: var(--default-color);
 }
 
+.card-footer {
+    border: 0 none;
+    background: var(--background-color);
+    color: var(--default-color);
+}
+
 .section-header {
     color: var(--heading-color);
     padding-bottom: 1em;
@@ -89,6 +95,11 @@ body {
 
 .section-header-big {
     font-size: 4rem;;
+}
+
+.social-item {
+    background: var(--background-color);
+    border: 0 none;
 }
 
 footer > p > a {
