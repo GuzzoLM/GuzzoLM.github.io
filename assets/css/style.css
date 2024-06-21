@@ -15,6 +15,8 @@
     --heading-font: "Raleway",  sans-serif;
     --nav-font: "Poppins",  sans-serif;
     --default-font-size: 1.5rem;
+    --small-font-size: 1rem;
+    --big-font-size: 2.5rem;
 }
 
 body {
@@ -94,7 +96,7 @@ body {
 }
 
 .section-header-big {
-    font-size: 4rem;;
+    font-size: 4rem;
 }
 
 .social-item {
@@ -104,6 +106,32 @@ body {
 
 .skill-item {
     padding-bottom: 1em;
+}
+
+.work-item {
+    padding-bottom: 2em;
+}
+
+.work-date {
+    font-size: var(--small-font-size);
+    margin-bottom: 0;
+}
+
+.work-company {
+    text-decoration: none;
+    color: var(--default-color);
+    font-size: var(--big-font-size);
+    color: var(--default-color);
+}
+
+.contact-item {
+    margin-bottom: 0;
+    text-decoration: none;
+    color: var(--default-color);
+}
+
+.contact-title {
+    font-size: var(--small-font-size);
 }
 
 footer > p > a {
@@ -116,5 +144,5 @@ footer {
     font-size: small;
     line-height: 0.5rem;
     font-family: var(--heading-font);
-    padding-top: 5em;;
+    padding-top: 5em;
 }
