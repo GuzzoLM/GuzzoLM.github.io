@@ -1,11 +1,12 @@
 /* Global Colors */
 :root { 
-    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --background-color: #cad2e9; /* Background color for the entire website, including individual sections */
     --default-color: #424343; /* Default color used for the majority of the text content across the entire website */
     --separator-color: #c8cbcb; /* Default color used for the majority of the text content across the entire website */
     --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
     --accent-color: #320562; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+    --background-contrast-color: #ac9ee4; /*To be used for the background of important components like the header */ 
 }
 
 /* Fonts */
@@ -13,16 +14,31 @@
     --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Raleway",  sans-serif;
     --nav-font: "Poppins",  sans-serif;
+    --default-font-size: 1.5rem;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--default-color);
+    font-family: var(--default-font);
+    font-size: var(--default-font-size);
 }
 
 .header {
-    background: var(--background-color);
+    padding-top: 2em;
+    background: var(--background-contrast-color);
     color: var(--default-color);
+    font-family: var(--heading-font);
+}
+
+.header-navbar {
+    background: var(--background-contrast-color);
+    color: var(--default-color);
+    padding-bottom: 1em;
+    padding-top: 1em;
     border-bottom-style: solid;
     border-bottom-width: initial;
     border-bottom-color: var(--separator-color);
-    padding-bottom: 2em;
-    padding-top: 2em;
 }
 
 .header-item {
@@ -36,46 +52,54 @@
 }
 
 .header-list-item:hover{
-    background: var(--separator-color);
+    background: var(--background-color);
 }
 
 .header-list-item.active{
     background: var(--accent-color);
-    color: var(--contrast-color);
+    color: var(--contrast-color) !important;
 }
 
 .header-title{
     color: var(--accent-color);
 }
 
-.header-button{
-    border: thin var(--accent-color);
-    border-radius: 0.5em;
-    border-style: solid;
-    color: var(--default-color);
-    padding: 0.5em;
-}
-
-.header-button:hover, .header-button.active{
-    background: var(--accent-color);
-    color: var(--contrast-color);
-}
-
 .profile-photo {
-    height: 30em;;
+    height: 100%;;
 }
 
 .section {
     background: var(--background-color);
     color: var(--default-color);
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.card {
+    border: 0 none;
+    background: var(--background-color);
+    color: var(--default-color);
 }
 
 .section-header {
     color: var(--heading-color);
+    padding-bottom: 1em;
+    padding-top: 2em;
 }
 
 .section-header-big {
     font-size: 4rem;;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--default-color);
+}
+
+footer {
+    color: var(--default-color);
+    font-size: small;
+    line-height: 0.1rem;
+    font-family: var(--heading-font);
+    padding-top: 5em;;
 }

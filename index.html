@@ -8,94 +8,142 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <a href="#" class="header-item header-title">Lucas Guzzo</a>
-              </div>
-              <div class="col d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                <div class="list-group list-group-horizontal">
-                    <a href="#top" class="list-group-item header-list-item border-0 active">Top</a>
-                    <a href="#" class="list-group-item header-list-item border-0">About</a>
-                    <a href="#" class="list-group-item header-list-item border-0">Roles</a>
-                    <a href="#" class="list-group-item header-list-item border-0">Skills</a>
-                    <a href="#" class="list-group-item header-list-item border-0">Experience</a>
-                    <a href="#" class="list-group-item header-list-item border-0">Curiosities</a>
-                    <a href="#" class="list-group-item header-list-item border-0" style="display: none;">Blog</a>
-                    <a href="#" class="list-group-item header-list-item border-0">Contact</a>
-                </div>
-              </div>
-              <div class="col">
-                <a href="#" class="header-item header-button">Let's Talk</a>
-              </div>
-            </div>
-          </div>
-    </header>
-
     <div class="container">
-        <div class="row section" id="top">
-            <div class="col">
-                <h1 class="section-header section-header-big">Lucas Menezes Guzzo</h1>
-                <h3 class="section-header">Sr. Software Engineer | Technical Lead</h3>
-                <p>Hello, nice to meet you! I'm Lucas, a senior software engineer with years of experience in software development.</p>
-                <p>Based in Brazil(GMT-3) and available to work with both Europe and US companies. Flexible with timezone differences if extended overlapping is needed.</p>
+        
+        <div class="header">
+            <nav class="navbar header-navbar fixed-top navbar-expand-lg navbar-light justify-content-between">
+                <div class="container">
+                    <a class="navbar-brand header-item header-title" href="#">Lucas Guzzo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a href="#top" class="nav-item nav-link header-list-item active">Top</a>
+                            <a href="#about" class="nav-item nav-link header-list-item">About me</a>
+                            <a href="#roles" class="nav-item nav-link header-list-item">Roles I play</a>
+                            <a href="#skills" class="nav-item nav-link header-list-item">My Skills</a>
+                            <a href="#experience" class="nav-item nav-link header-list-item">Work Experience</a>
+                            <a href="#curiosities" class="nav-item nav-link header-list-item">Curiosities</a>
+                            <a href="#blog" class="nav-item nav-link header-list-item" style="display: none;">Blog</a>
+                            <a href="#contact" class="nav-item nav-link header-list-item">Contact</a>
+                        </div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <a class="btn btn-outline-success my-2 my-sm-0" href="#">Let's Talk</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="card-group section" id="top">
+            <div class="card text-center order-md-2">
+                <div class="card-body" >
+                    <img src="assets/img/photo.jpeg" alt="Lucas's profile photo" class="img-fluid rounded-circle profile-photo">
+                </div>
             </div>
-            <div class="col">
-                <img src="assets/img/photo.jpeg" alt="" class="img-fluid rounded-circle profile-photo">
+            <div class="card order-md-1">
+                <div class="card-body text-left">
+                  <h1 class="card-title section-header section-header-big" style="padding-top: inherit; padding-bottom: inherit;">Lucas Guzzo</h1>
+                  <h2 class="card-subtitle text-muted section-header" style="padding-top: inherit;">Sr. Software Engineer | Technical Lead</h2>
+                  <p class="card-text">Hello, nice to meet you! I'm Lucas, a senior software engineer with years of experience in software development.</p>
+                  <p class="card-text">5+ years working in English-speaking environments.</p>
+                  <p class="card-text">Based in Brazil(GMT-3) and available to work with both Europe and US companies. Flexible with timezone differences if extended overlapping is needed.</p>
+                </div>
             </div>
         </div>
-        <section class="about-me">
-            <h2 class="section-title">About Me</h2>
-            <p>Hello! I'm a passionate developer with experience in building web applications using modern technologies. I love coding, solving complex problems, and continuously learning new things to improve my skills.</p>
-        </section>
 
-        <section class="work-experience">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="media mb-4">
-                <div class="media-body">
-                    <h5 class="mt-0">Job Title</h5>
-                    <p><strong>Company Name</strong> - <em>Jan 2020 - Present</em></p>
-                    <p>Describe your responsibilities and achievements at this job. Highlight the technologies you used and any significant projects you worked on.</p>
+        <div class="card-group section" id="about">
+            <div class="card">
+                <div class="card-body text-left">
+                  <h2 class="card-subtitle section-header">About me</h2>
+                  <p class="card-text">I am a seasoned software engineer with over a decade of experience in backend development, specializing in .Net and microservices architecture. Throughout my career, I have demonstrated expertise in cloud-based solutions, event-driven design, and technical leadership.</p>
+                  <p class="card-text">My career spans roles at Basecone, Farfetch, and Radix, where I successfully migrated legacy systems, optimized performance, and implemented serverless architectures. My work is characterized by a strong passion for innovative solutions and technical challenges.</p>
+                  <p class="card-text">Currently, as Lead Software Engineer at SciSports, I oversee the development and operation of backend services, leading a team to deliver high-performance solutions.</p>
+                  <h3 class="card-subtitle text-muted section-header">Things I excel at</h3>
+                  <ul>
+                    <li>.Net Core, 7, 8 (C#)</li>
+                    <li>Microservices</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                    <li>RabbitMQ</li>
+                    <li>Event Sourcing</li>
+                    <li>CQRS</li>
+                    <li>Azure</li>
+                    <li>Kubernetes</li>
+                    <li>Serverless</li>
+                    <li>TDD</li>
+                    <li>Design Patterns</li>
+                    <li>Migrating a monolith application into microservices (this one is my favorite)</li>
+                  </ul>
+                  <h3 class="card-subtitle text-muted section-header">Things I have some experience with and would love to work with again</h3>
+                  <ul>
+                    <li>Unity 3D</li>
+                    <li>Python</li>
+                    <li>Node(I prefer Typescript, but can do Javascript)</li>
+                    <li>AWS</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Redis</li>
+                    <li>Go</li>
+                    <li>RUST</li>
+                    <li>Anything new… I like learning stuff</li>
+                  </ul>
                 </div>
             </div>
-            <div class="media mb-4">
-                <div class="media-body">
-                    <h5 class="mt-0">Job Title</h5>
-                    <p><strong>Company Name</strong> - <em>Jan 2018 - Dec 2019</em></p>
-                    <p>Describe your responsibilities and achievements at this job. Highlight the technologies you used and any significant projects you worked on.</p>
+        </div>
+
+        <div class="card-group section" id="roles">
+            <div class="card">
+                <div class="card-body text-left">
+                  <h2 class="card-subtitle section-header">Roles I can play</h2>
+                  <div class="card-group">
+                    <div class="card">
+                        <div class="card-body" style="padding-left: 0em;">
+                            <h3 class="card-subtitle text-muted section-header">Backend Developer</h3>
+                            <p class="card-text">Writing back-end code, that’s where I thrive, that’s my home. My main stack is C#, but after so many years of development work I can pretty much handle anything.</p>
+                            <p class="card-text">I am very easy going, am a good listener and usually fit any team smoothly.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="padding-left: 0em;">
+                            <h3 class="card-subtitle text-muted section-header">Fullstack Developer</h3>
+                            <p class="card-text">With so many years working with software, it would be a miracle if I never touched front-end. I learned Javascript early on in my career, but really got my hands dirty when I started with Typescript.</p>
+                            <p class="card-text">I can do Angular, React and Vue.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="padding-left: 0em;">
+                            <h3 class="card-subtitle text-muted section-header">Technical Leader</h3>
+                            <p class="card-text">In my work experience I faced some challenges, fought some battles and nearly cried sometimes. Everytime I had great people beside me to help. After some time I also started helping those in need.</p>
+                            <p class="card-text">I’m usually an easy person to talk to, I like being helpful and after these years I came to learn some tricks. As a result, I have already been appointed as a technical leader a couple of times.</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <!-- Add more work experiences as needed -->
-        </section>
+        </div>
 
-        <section class="skills">
-            <h2 class="section-title">Skills</h2>
-            <ul class="list-group">
-                <li class="list-group-item">HTML5 & CSS3</li>
-                <li class="list-group-item">JavaScript & jQuery</li>
-                <li class="list-group-item">Bootstrap</li>
-                <li class="list-group-item">React.js</li>
-                <li class="list-group-item">Node.js & Express</li>
-                <li class="list-group-item">SQL & NoSQL Databases</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-
-        <section class="contact-info">
-            <h2 class="section-title">Contact Information</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-            <!-- Add more contact information as needed -->
-        </section>
+        <!-- <div class="card-group" id="skills">
+            <div class="card" style="float: right;">
+                <div class="card-body">
+                  <h2 class="card-subtitle section-header">About me</h2>
+                  <p class="card-text">Hello, nice to meet you! I'm Lucas, a senior software engineer with years of experience in software development.</p>
+                  <p class="card-text">Based in Brazil(GMT-3) and available to work with both Europe and US companies. Flexible with timezone differences if extended overlapping is needed.</p>
+                </div>
+            </div>
+        </div> -->
+        
     </div>
 
     <footer class="text-center mt-4">
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap 5</a>. Hosted with <a href="https://pages.github.com/">GitHub pages</a>. Made with <i class="fa-solid fa-heart"></i> by me.</p>
+        <p>&copy; 2024 Lucas Menezes Guzzo. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a593cfdfbd.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
