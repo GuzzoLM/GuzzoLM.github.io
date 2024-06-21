@@ -102,6 +102,10 @@ body {
     border: 0 none;
 }
 
+.skill-item {
+    padding-bottom: 1em;
+}
+
 footer > p > a {
     text-decoration: none;
     color: var(--default-color);
@@ -110,7 +114,7 @@ footer > p > a {
 footer {
     color: var(--default-color);
     font-size: small;
-    line-height: 0.1rem;
+    line-height: 0.5rem;
     font-family: var(--heading-font);
     padding-top: 5em;;
 }
